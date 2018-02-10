@@ -6,6 +6,10 @@ body {
     background-color: #ffffff;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 h1 {
     color: #006dcc;
     font-family: 'Fascinate Inline', cursive;
