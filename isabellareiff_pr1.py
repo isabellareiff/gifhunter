@@ -12,7 +12,7 @@ from datetime import datetime
 
 def createServer():
 	serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	serversocket.bind(('liam.thayer.cs484.eecs.net',80))
+	serversocket.bind(('isabella.reiff.cs484.eecs.net',80))
 	print(socket.gethostname())
 	serversocket.listen(5)
 
@@ -52,7 +52,7 @@ def createServer():
 			print('\n\n', toserv, '\n\n')
 			toserv = mydict[toserv]
 			print('\n\n', toserv, '\n\n')
-			header = 'HTTP/1.1 301 Moved\r\nLocation: http://liam.thayer.cs484.eecs.net/' + toserv + '\r\n'
+			header = 'HTTP/1.1 301 Moved\r\nLocation: http://isabella.reiff.cs484.eecs.net/' + toserv + '\r\n'
 
 		try:
 			file = open(toserv, 'rb')
